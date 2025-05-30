@@ -25,6 +25,8 @@ public class ProductoServiceImpl implements ProductoService {
                 .nombre(producto.getNombre())
                 .precio(producto.getPrecio()).build());
 
+        // debe ir logica aca de crear inventario inicail cuando producto nuevo
+
         return ResponseEntity.ok(ProductoResponse.builder()
                 .id(guardarProducto.getId())
                 .nombre(guardarProducto.getNombre())

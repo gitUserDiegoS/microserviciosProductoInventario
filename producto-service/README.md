@@ -1,5 +1,5 @@
-# microserviciosProductoInventario
-Contiene artefactos Producto-service, inventario-service
+# microservicios Producto-service
+Contiene artefactos Producto-service
 
 ## Table of Contents
 
@@ -15,7 +15,7 @@ Contiene artefactos Producto-service, inventario-service
 2. Ejecutar el archivo docker-compose.yml con el comando: docker compose up --build
 
 Url base de microservicio producto-service: `http://localhost:8081`
-Url base de microservicio inventario-service: `http://localhost:8082`
+
 
 ## Endpoints producto-service
 
@@ -101,25 +101,5 @@ Url base de microservicio inventario-service: `http://localhost:8082`
 }
 ```
 
-
-## Endpoints inventario-service
-
-
-### 1. GET - consultar inventarios con informacion de producto
-
-`http://localhost:8082/api/inventarios/1`
-
-**Response:**
-
-```json
-{
-    "productoDto": {
-        "id": 1,
-        "nombre": "Test Product",
-        "precio": 49.99
-    },
-    "cantidad": 20.0
-}
-```
 
 Consultar collecccion postman adjuntada
